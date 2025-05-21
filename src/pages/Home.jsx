@@ -3,9 +3,10 @@ import React from "react";
 import { motion } from "motion/react";
 import { LampContainer } from "@/components/ui/lamp";
 import { AnimatedTestimonials } from "@/components/ui/animated-testimonials";
-import FeaturedProjects from "@/components/FeaturedProjects";
 import FeaturedAbout from "@/components/FeaturedAbout";
 import Services from "@/components/Services";
+import ProjectsSection from "@/components/ProjectsSection";
+import StatsSection from "@/components/Stats";
 export default function Home() {
   const testimonials = [
     {
@@ -67,16 +68,16 @@ export default function Home() {
 
       <Services />
 
-      <FeaturedProjects />
+      <ProjectsSection />
+
+      <StatsSection />
 
       {/* Testimonials */}
       <section className="py-16 bg-gray-50 text-center">
-         <p className="text-3xl sm:text-5xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-blue-500 to-blue-800 flex items-center justify-center py-8">
-          Testimonials
-        </p>
-        <h2 className="text-xl font-bold text-gray-800 mb-8">
-          What Our Clients Say
-        </h2>
+         <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            What <span className="text-blue-500 mr-2">Our Clients</span>Say
+          </h2>
+          <div className="w-20 h-1 bg-blue-500 mx-auto mb-6"></div>
         <div className="flex justify-center">
           <div className="max-w-4xl w-full px-4">
             <AnimatedTestimonials testimonials={testimonials} />

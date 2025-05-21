@@ -10,10 +10,18 @@ import {
   MobileNavToggle,
   MobileNavMenu,
 } from "@/components/ui/resizable-navbar";
-import { useState } from "react";
+import React, { useRef, useState } from "react";
 import { Link } from "react-router-dom";
 
 export function NavbarDemo() {
+  const detailsRef = useRef(null);
+
+    const handleClose = () => {
+    if (detailsRef.current) {
+      detailsRef.current.removeAttribute("open");
+    }
+  };
+  
   const navItems = [
     {
       name: "Features",
@@ -36,7 +44,7 @@ export function NavbarDemo() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <div className="relative w-full">
+    <div className="relative w-full z-50">
       <Navbar>
         {/* Desktop Navigation */}
         <NavBody>
@@ -45,22 +53,25 @@ export function NavbarDemo() {
           <div className="flex items-center gap-4">
             <NavbarButton variant="secondary">Login</NavbarButton>
 
-            <details className="relative group">
-              <summary className="list-none">
-                <NavbarButton variant="primary">Hero</NavbarButton>
-              </summary>
-              <ul className="absolute right-0 mt-2 w-40 rounded-md bg-white shadow-lg border z-50">
-                <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
-                  <Link to="/hero1">Hero1</Link>
-                </li>
-                <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
-                  Hero2
-                </li>
-                <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
-                  Hero3
-                </li>
-              </ul>
-            </details>
+            <details ref={detailsRef} className="relative group">
+      <summary className="list-none">
+        <NavbarButton variant="primary">Hero</NavbarButton>
+      </summary>
+      <ul className="absolute right-0 mt-2 w-40 rounded-md bg-white shadow-lg border z-50">
+        <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
+          <Link to="/" onClick={handleClose}>Hero1</Link>
+        </li>
+        <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
+          <Link to="/hero1" onClick={handleClose}>Hero2</Link>
+        </li>
+        <li
+          className="px-4 py-2 hover:bg-gray-100 cursor-pointer"
+          onClick={handleClose}
+        >
+          Hero3
+        </li>
+      </ul>
+    </details>
           </div>
         </NavBody>
 
