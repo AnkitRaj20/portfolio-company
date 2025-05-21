@@ -11,7 +11,7 @@ export default function Services() {
       icon: <Code className="h-8 w-8" />,
       title: "Web Development",
       description: "Custom websites and web applications built with the latest technologies.",
-      color: "from-blue-500 to-indigo-600",
+      color: "from-indigo-500 to-indigo-600",
     },
     {
       icon: <Palette className="h-8 w-8" />,
@@ -35,13 +35,13 @@ export default function Services() {
       icon: <Smartphone className="h-8 w-8" />,
       title: "Mobile Development",
       description: "Native and cross-platform mobile applications for iOS and Android.",
-      color: "from-blue-500 to-red-600",
+      color: "from-indigo-500 to-red-600",
     },
     {
       icon: <Megaphone className="h-8 w-8" />,
       title: "Digital Marketing",
       description: "Results-driven campaigns that increase visibility and conversions.",
-      color: "from-cyan-500 to-blue-600",
+      color: "from-cyan-500 to-indigo-600",
     },
   ];
 
@@ -52,7 +52,7 @@ export default function Services() {
         {[...Array(5)].map((_, i) => (
           <motion.div
             key={i}
-            className="absolute rounded-full bg-blue-500 opacity-5"
+            className="absolute rounded-full bg-indigo-500 opacity-5"
             initial={{
               x: `${Math.random() * 100 - 50}%`,
               y: `${Math.random() * 100 - 50}%`,
@@ -92,9 +92,9 @@ export default function Services() {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-slate-800">
-            Our <span className="text-blue-600">Services</span>
+            Our <span className="text-indigo-600">Services</span>
           </h2>
-          <div className="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
+          <div className="w-20 h-1 bg-indigo-600 mx-auto mb-6"></div>
           <p className="max-w-2xl mx-auto text-slate-600">
             We offer a comprehensive range of digital services to help your business thrive in today's competitive
             landscape.
@@ -119,7 +119,7 @@ export default function Services() {
                     rotate: [0, -10, 10, -10, 0],
                     transition: { duration: 0.5 },
                   }}
-                  className="w-16 h-16 rounded-full bg-slate-100 flex items-center justify-center mb-4 text-blue-600"
+                  className="w-16 h-16 rounded-full bg-slate-100 flex items-center justify-center mb-4 text-indigo-600"
                 >
                   {service.icon}
                 </motion.div>

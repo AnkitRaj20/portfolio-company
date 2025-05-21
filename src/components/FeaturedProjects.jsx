@@ -11,7 +11,7 @@ const FeaturedProjects = () => {
     <div className="bg-white dark:bg-black py-5">
       <div className="text-center mt-3">
        
-        <p className="text-3xl sm:text-5xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-blue-500 to-blue-800 flex items-center justify-center py-8">
+        <p className="text-3xl sm:text-5xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-indigo-500 to-indigo-800 flex items-center justify-center py-8">
           Projects
         </p>
       </div>

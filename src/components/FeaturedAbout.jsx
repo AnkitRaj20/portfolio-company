@@ -36,9 +36,9 @@ export default function FeaturedAbout() {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-slate-800">
-            About <span className="text-blue-600">Our Company</span>
+            About <span className="text-indigo-600">Our Company</span>
           </h2>
-          <div className="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
+          <div className="w-20 h-1 bg-indigo-600 mx-auto mb-6"></div>
           <p className="max-w-2xl mx-auto text-slate-600">
             We're a team of passionate innovators dedicated to creating exceptional digital experiences that help
             businesses thrive in today's competitive landscape.
@@ -63,7 +63,7 @@ export default function FeaturedAbout() {
             </p>
 
             <motion.div
-              className="flex items-center space-x-2 text-blue-600 font-medium"
+              className="flex items-center space-x-2 text-indigo-600 font-medium"
               whileHover={{ x: 5 }}
               transition={{ type: "spring", stiffness: 400 }}
             >
@@ -98,7 +98,7 @@ export default function FeaturedAbout() {
               alt="Our team working together"
               className="object-cover w-full h-full"
             />
-            <div className="absolute inset-0 bg-blue-600 mix-blend-multiply opacity-20"></div>
+            <div className="absolute inset-0 bg-indigo-600 mix-blend-multiply opacity-20"></div>
           </motion.div>
         </div>
 
@@ -110,22 +110,22 @@ export default function FeaturedAbout() {
         >
           {[
             {
-              icon: <Users className="h-10 w-10 text-blue-600" />,
+              icon: <Users className="h-10 w-10 text-indigo-600" />,
               title: "Team of Experts",
               description: "Our diverse team brings together expertise from various disciplines.",
             },
             {
-              icon: <Lightbulb className="h-10 w-10 text-blue-600" />,
+              icon: <Lightbulb className="h-10 w-10 text-indigo-600" />,
               title: "Innovative Solutions",
               description: "We constantly explore new technologies to deliver cutting-edge results.",
             },
             {
-              icon: <CheckCircle className="h-10 w-10 text-blue-600" />,
+              icon: <CheckCircle className="h-10 w-10 text-indigo-600" />,
               title: "Quality Assurance",
               description: "Every project undergoes rigorous testing to ensure flawless execution.",
             },
             {
-              icon: <TrendingUp className="h-10 w-10 text-blue-600" />,
+              icon: <TrendingUp className="h-10 w-10 text-indigo-600" />,
               title: "Growth Focus",
               description: "We're committed to helping your business achieve sustainable growth.",
             },

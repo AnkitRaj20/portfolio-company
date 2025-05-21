@@ -120,9 +120,9 @@ export default function ProjectsSection() {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Our <span className="text-blue-500">Projects</span>
+            Our <span className="text-indigo-500">Projects</span>
           </h2>
-          <div className="w-20 h-1 bg-blue-500 mx-auto mb-6"></div>
+          <div className="w-20 h-1 bg-indigo-500 mx-auto mb-6"></div>
           <p className="max-w-2xl mx-auto text-slate-300">
             Explore our portfolio of successful projects that showcase our expertise and creative approach.
           </p>
@@ -151,7 +151,7 @@ export default function ProjectsSection() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900 to-transparent opacity-60" />
                 <div className="absolute bottom-0 left-0 p-4">
-                  <span className="inline-block px-3 py-1 text-xs font-semibold bg-blue-500 text-white rounded-full mb-2">
+                  <span className="inline-block px-3 py-1 text-xs font-semibold bg-indigo-500 text-white rounded-full mb-2">
                     {project.category}
                   </span>
                   <h3 className="text-xl font-bold text-white">{project.title}</h3>
@@ -162,7 +162,7 @@ export default function ProjectsSection() {
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="mt-4 text-blue-400 font-medium flex items-center"
+                  className="mt-4 text-indigo-400 font-medium flex items-center"
                 >
                   View Details
                   <svg
@@ -220,30 +220,30 @@ export default function ProjectsSection() {
                   </button>
                 </div>
                 <div className="p-6">
-                  <span className="inline-block px-3 py-1 text-xs font-semibold bg-blue-500 text-white rounded-full mb-2">
+                  <span className="inline-block px-3 py-1 text-xs font-semibold bg-indigo-500 text-white rounded-full mb-2">
                     {activeProject.category}
                   </span>
                   <h3 className="text-2xl font-bold text-white mb-4">{activeProject.title}</h3>
                   <p className="text-slate-300 mb-6">{activeProject.description}</p>
                   <div className="grid grid-cols-2 gap-4 mb-6">
                     <div>
-                      <h4 className="font-semibold text-blue-400 mb-2">Client</h4>
+                      <h4 className="font-semibold text-indigo-400 mb-2">Client</h4>
                       <p className="text-slate-300">Fortune 500 Company</p>
                     </div>
                     <div>
-                      <h4 className="font-semibold text-blue-400 mb-2">Timeline</h4>
+                      <h4 className="font-semibold text-indigo-400 mb-2">Timeline</h4>
                       <p className="text-slate-300">3 months</p>
                     </div>
                     <div>
-                      <h4 className="font-semibold text-blue-400 mb-2">Services</h4>
+                      <h4 className="font-semibold text-indigo-400 mb-2">Services</h4>
                       <p className="text-slate-300">{activeProject.category}, Strategy, Development</p>
                     </div>
                     <div>
-                      <h4 className="font-semibold text-blue-400 mb-2">Technologies</h4>
+                      <h4 className="font-semibold text-indigo-400 mb-2">Technologies</h4>
                       <p className="text-slate-300">React, Node.js, AWS</p>
                     </div>
                   </div>
-                  <button className="bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-6 rounded-lg transition-colors">
+                  <button className="bg-indigo-500 hover:bg-indigo-600 text-white font-medium py-2 px-6 rounded-lg transition-colors">
                     View Live Project
                   </button>
                 </div>

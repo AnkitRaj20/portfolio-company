@@ -75,9 +75,9 @@ export default function Home() {
       {/* Testimonials */}
       <section className="py-16 bg-gray-50 text-center">
          <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            What <span className="text-blue-500 mr-2">Our Clients</span>Say
+            What <span className="text-indigo-500 mr-2">Our Clients</span>Say
           </h2>
-          <div className="w-20 h-1 bg-blue-500 mx-auto mb-6"></div>
+          <div className="w-20 h-1 bg-indigo-500 mx-auto mb-6"></div>
         <div className="flex justify-center">
           <div className="max-w-4xl w-full px-4">
             <AnimatedTestimonials testimonials={testimonials} />

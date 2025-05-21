@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import Home from "../pages/Home";
 import Hero1 from '../pages/Hero1';
 import About from "../pages/About";
+import Hero3 from "@/pages/Hero3";
 // import Services from "../pages/Services";
 // import Portfolio from "../pages/Portfolio";
 // import Contact from "../pages/Contact";
@@ -12,6 +13,7 @@ const AppRoutes = () => (
   <Routes>
     <Route path="/" element={<Home />} />
     <Route path="/hero1" element={<Hero1 />} />
+    <Route path="/hero3" element={<Hero3 />} />
     <Route path="/about" element={<About />} />
     {/* <Route path="/about" element={<About />} />
     <Route path="/services" element={<Services />} />

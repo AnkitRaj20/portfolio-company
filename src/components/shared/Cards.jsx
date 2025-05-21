@@ -32,7 +32,7 @@ const Card = ({
         <div className="bg-white p-4 sm:p-6 dark:bg-gray-900 flex flex-col justify-between flex-grow">
           <header>
             <div className="flex justify-between items-start">
-              <h3 className="text-xl font-bold my-3 text-start text-gray-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400">
+              <h3 className="text-xl font-bold my-3 text-start text-gray-900 dark:text-white hover:text-indigo-600 dark:hover:text-indigo-400">
                 {name}
               </h3>
               {github && (
@@ -59,7 +59,7 @@ const Card = ({
               {languagesUsed.map((iconUrl, i) => (
                 <Button
                   key={i}
-                  className="p-2 bg-zinc-100 rounded-md hover:bg-blue-200"
+                  className="p-2 bg-zinc-100 rounded-md hover:bg-indigo-200"
                   variant="outline"
                   size="icon"
                 >

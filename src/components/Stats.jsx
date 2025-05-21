@@ -8,7 +8,7 @@ export default function StatsSection() {
   const [counts, setCounts] = useState({ clients: 0, projects: 0, years: 0, countries: 0 });
 
   const stats = [
-    { name: "Happy Clients", value: 250, icon: <Users className="h-8 w-8" />, color: "from-blue-500 to-indigo-600" },
+    { name: "Happy Clients", value: 250, icon: <Users className="h-8 w-8" />, color: "from-indigo-500 to-indigo-600" },
     { name: "Projects Completed", value: 520, icon: <Award className="h-8 w-8" />, color: "from-rose-500 to-pink-600" },
     { name: "Years Experience", value: 12, icon: <Clock className="h-8 w-8" />, color: "from-amber-500 to-orange-600" },
     { name: "Countries Served", value: 30, icon: <Globe className="h-8 w-8" />, color: "from-emerald-500 to-teal-600" },
@@ -62,9 +62,9 @@ export default function StatsSection() {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Our <span className="text-blue-500">Impact</span> in Numbers
+            Our <span className="text-indigo-500">Impact</span> in Numbers
           </h2>
-          <div className="w-20 h-1 bg-blue-500 mx-auto mb-6"></div>
+          <div className="w-20 h-1 bg-indigo-500 mx-auto mb-6"></div>
           <p className="max-w-2xl mx-auto text-slate-300">
             We're proud of what we've accomplished together with our clients over the years.
           </p>
