@@ -37,7 +37,7 @@ export function NavbarDemo() {
     },
     {
       name: "About",
-      link: "/about",
+      link: "#about",
     },
   ];
 
